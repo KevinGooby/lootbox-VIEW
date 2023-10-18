@@ -1,0 +1,41 @@
+version: '3.9'
+
+services:
+  db:
+    image: 'postgres:14.5'
+    restart: always
+    environment:
+      POSTGRES_USER: 'test'
+      POSTGRES_PASSWORD: 'test'
+      POSTGRES_DB: 'test'
+    ports:
+      - '5432:5432'
+    healthcheck:
+      test: ['CMD', 'pg_isready', '-q', '-d', 'test', '-U', 'test']
+      interval: 5s
+      timeout: 10s
+      retries: 5
+
+  api:
+    build: .
+    restart: always
+    ports:
+      - 3001:3001
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PGUSER: 'test'
+      PGHOST: 'db'
+      PGDATABASE: 'test'
+      PGPASSWORD: 'test'
+      PGPORT: 5432
+
+    # enables hot reloading here by looking for changes here
+    volumes:
+      - ./:/app
+      - node_modules:/app/node_modules/
+
+# not sure if this is needed
+volumes:
+  node_modules:
