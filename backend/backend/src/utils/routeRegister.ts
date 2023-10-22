@@ -1,5 +1,4 @@
 import { Request, Response } from 'express';
-
 export const routeRegister = (route: any, app: any) => {
   route.forEach((route) => {
     app[route.method](
