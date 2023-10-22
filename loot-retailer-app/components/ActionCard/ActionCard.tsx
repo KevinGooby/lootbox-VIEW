@@ -16,7 +16,7 @@ export const ActionCard = ({
           //@ts-expect-error
           height={imageHeight}
           component="img"
-          image="https://cdn.nba.com/headshots/nba/latest/1040x760/203999.png"
+          image="https://ucarecdn.com/32352264-91a3-410f-a6f6-0fa7a748cc44/"
         />
 
         <Styled.CardContentContainer>{cardContent}</Styled.CardContentContainer>

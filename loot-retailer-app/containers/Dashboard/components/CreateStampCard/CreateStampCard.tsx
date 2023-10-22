@@ -16,9 +16,6 @@ export const CreateStampCard = () => {
       <Styled.StartButton handleClick={() => setActiveModal(Modal.GET_STARTED)}>
         Start
       </Styled.StartButton>
-      <Styled.HelperText variant="body1">
-        Want help getting started? Check out our set up guide
-      </Styled.HelperText>
     </Styled.Container>
   );
 };

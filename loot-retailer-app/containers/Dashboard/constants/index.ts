@@ -7,16 +7,8 @@ export const NAV_VALUES = [
     route: ROUTES.DASHBOARD,
   },
   {
-    name: 'test',
-    route: ROUTES.DASHBOARD,
-  },
-  {
-    name: 'test',
-    route: ROUTES.DASHBOARD,
-  },
-  {
-    name: 'test',
-    route: ROUTES.DASHBOARD,
+    name: 'My Account',
+    route: ROUTES.ACCOUNT,
   },
 ];
 
