@@ -8,7 +8,7 @@ export const SideCard = () => {
       <Styled.LogoContainer>LOOT</Styled.LogoContainer>
       <Styled.SloganContainer>
         <Styled.SloganText variant="h4">
-          One Stamp at a Time!
+          Welcome back to Lootbox!
         </Styled.SloganText>
       </Styled.SloganContainer>
     </Styled.SideCard>
