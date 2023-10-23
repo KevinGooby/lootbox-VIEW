@@ -108,6 +108,7 @@ export const TitleText = styled(Typography)`
 
 export const TempContainer = styled.div`
   background-color: ${theme.colors.primary};
+  background-image: url("constants/qr-code.png");
   height: 200px;
   width: 100%;
 `;

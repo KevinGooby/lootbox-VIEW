@@ -6,8 +6,9 @@ export const Container = styled.div`
   margin-top: 40px;
   background-color: ${({ theme }) => theme.colors.card};
   width: 350px;
-  height: 200px;
+  height: 139px;
   padding: 20px;
+  border-radius: 8px;
 `;
 
 export const Header = styled(Typography)``;

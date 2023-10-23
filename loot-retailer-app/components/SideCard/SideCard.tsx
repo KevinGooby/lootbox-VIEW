@@ -1,4 +1,6 @@
 import * as Styled from './SideCard.styles';
+import Logo from '@/constants/lootbox-logo.png'
+import Image from 'next/image';
 
 export const SideCard = () => {
   return (

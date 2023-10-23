@@ -38,7 +38,7 @@ export const Login = () => {
           <Styled.TitleText variant="h4">LOOT</Styled.TitleText>
           <Styled.TempContainer></Styled.TempContainer>
           <Styled.SloganText variant="body1">
-            Insert a brief description or slogan about the product here.
+            Include something here.
           </Styled.SloganText>
         </>
       ) : (

@@ -12,9 +12,11 @@ import {
   DashboardContext,
   DashboardContextProps,
 } from '../../context/DashboardContext';
-
+import { ModalContext, ModalContextProps } from '@/contexts';
+import { Modal } from '@/constants/modal';
 export const GetStartedForm = () => {
   const { createStamp } = useContext(DashboardContext) as DashboardContextProps;
+  const { setActiveModal } = useContext(ModalContext) as ModalContextProps
 
   const {
     control,
@@ -163,7 +165,7 @@ export const GetStartedForm = () => {
       <Styled.ButtonContainer>
         <Styled.StyledButton
           isDisabled={isDisabled}
-          handleClick={() =>
+          handleClick={() => {
             createStamp({
               name: payload.name as string,
               visitsNeededPerRedemption:
@@ -171,8 +173,10 @@ export const GetStartedForm = () => {
               discountPercentage: payload.discountPercentage as number,
               redemptionCheckpoints: [payload.redemptionCheckpoints as number],
               retailerId: 'temp',
-            })
+            });
+            setActiveModal(Modal.GET_STARTED);
           }
+        }
         >
           Save
         </Styled.StyledButton>

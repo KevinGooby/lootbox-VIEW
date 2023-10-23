@@ -1,5 +1,6 @@
 import { Typography } from '@mui/material';
 import styled from 'styled-components';
+import bannerImage from "@/containers/Login/constants/qr-code.png"
 
 export const SideCard = styled.div`
   background-color: ${({ theme }) => theme.colors.primary};
@@ -25,3 +26,13 @@ export const SloganText = styled(Typography)`
   width: 300px;
   font-weight: 600;
 `;
+
+export const ImageContainer = styled.div`
+  max-width: 20px;
+  margin: 5px;
+`
+
+export const LogoImage = styled.img`
+  max-width: 20px;
+  margin: 5px;
+`
