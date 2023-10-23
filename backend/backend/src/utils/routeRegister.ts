@@ -13,11 +13,12 @@ export const routeRegister = (route: any, app: any) => {
         if (result instanceof Promise) {
           result.then((result) =>
             result !== null && result !== undefined
-              ? res.send(result)
+              ? res.send(result.data)
               : undefined
           );
         } else if (result !== null && result !== undefined) {
-          res.json(result);
+          console.log(result.data)
+          res.json(result.data);
         }
       }
     );

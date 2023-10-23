@@ -1,5 +1,12 @@
 import { AuthController } from '../../controller/AuthController/AuthController';
 
+/*
+ROUTES format:
+-> method: which request to listen for 
+-> route: from which URL
+-> controller: which controller we want to get our business logic from
+-> action: what function we want to do from our controller
+*/
 export const authRoutes = [
   {
     method: 'post',
