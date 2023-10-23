@@ -11,3 +11,6 @@ This project was actually started together by two people I knew with years of fu
 The project was unfortunately discontinued by those two people, but bit by bit I've been maintaining it and adding some new features. 
 
 Hope you enjoy! :)
+
+A rough Figma prototype of this app's MVP is [linked here](https://www.figma.com/file/2zANSIImRgJBVCMvCJdJY9/Lootbox?type=design&node-id=0%3A1&mode=design&t=13lT2IgBrI7wnfaF-1)
+Thank you!
